@@ -1,0 +1,10 @@
+<div class="forecast {{bgClass}}">
+    <div app-head-bar text="未来几日天气预报"></div>
+    <div class="loading bounce-box" ng-if="!list">
+        <div class="bounce bounce1"></div>
+        <div class="bounce bounce2"></div>
+        <div class="bounce bounce3"></div>
+
+    </div>
+    <div app-forecast-list data="list" class="fadeIn"></div>
+</div>

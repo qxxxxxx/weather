@@ -1,0 +1,14 @@
+<ul class="forecast-list">
+    <li class="list-item dp-f" ng-repeat="item in data">
+        <div>
+            <!--<b>昨天</b>-->
+            <span ng-bind="item.date_s"></span></div>
+        <div class="weather-icon icon-{{item.className}} ta-c" ng-bind="item.cond.txt_d"></div>
+        <div class="ta-r" ng-bind="item.tmp.min+'-'+item.tmp.max+'℃'"></div>
+    </li>
+    <!--<li class="list-item dp-f">
+            <div><b>今天</b>04/09</div>
+            <div class="weather-icon cloudy-a ta-c">阴天</div>
+            <div class="ta-r">22-11℃</div>
+        </li>-->
+</ul>

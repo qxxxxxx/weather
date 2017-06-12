@@ -1,0 +1,25 @@
+<div class="select-loc check-element animate-show-hide" ng-show="visible">
+    <p class="search-box dp-f">
+        <span class="go-back" ng-click="visible=false;searchInfo.status=false" ng-focus="true">&lt;</span>
+        <input type="text" ng-model="searchInfo.word" placeholder="输入城市名如:上海或者shanghai">
+        <span class="submit-btn" ng-click="searchInfo.search(searchInfo.word);">确定</span>
+    </p>
+    <div ng-if="!searchInfo.status">
+        <h2 ng-bind="'当前城市:'+city.name"></h2>
+        <h3>热门城市：</h3>
+        <ul class="city-list clearfix">
+            <li ng-repeat="item in hotList"><span ng-click="$parent.$parent.city.id=item.id;$parent.$parent.city.name=item.cityZh;$parent.$parent.visible=false;$parent.$parent.chooseCity=true;$parent.$parent.$parent.getWeatherInfo(item.id);$parent.$parent.searchInfo.status=false" ng-bind="item.cityZh"></span></li>
+        </ul>
+    </div>
+    <div ng-if="searchInfo.status">
+        <h3>搜索结果：</h3>
+        <ul class="result-list">
+            <li ng-repeat="item in searchInfo.result" ng-click="$parent.$parent.city.id=item.id;$parent.$parent.city.name=item.cityZh;$parent.$parent.visible=false;$parent.$parent.chooseCity=true;$parent.$parent.$parent.getWeatherInfo(item.id);$parent.$parent.searchInfo.status=false"
+                ng-bind="item.cityZh+'('+item.provinceZh+'-'+item.leaderZh+')'">
+
+            </li>
+        </ul>
+    </div>
+
+    <span class="cancel ta-c" ng-click="visible=false;searchInfo.status=false">X</span>
+</div>

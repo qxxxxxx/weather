@@ -1,0 +1,26 @@
+<div class="{{visible?'blur':''}} ">
+    <div app-head city="location" visible="visible" choose-city="chooseCity"></div>
+    <div class="container {{bgClass}}">
+        <div class="warp">
+            <div app-over-view list="list" ui-sref="detail" data="list"></div>
+            <div app-forecast-list data="forecast" ui-sref="forecast" page-an="pageAn"></div>
+            <div class="forest-tmp p-r">
+                <h2>未来天气趋势</h2>
+                <div class="loading bounce-box" ng-if="!list">
+                    <div class="bounce bounce1"></div>
+                    <div class="bounce bounce2"></div>
+                    <div class="bounce bounce3"></div>
+                </div>
+                <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick" chart-colors="color">
+                </canvas>
+                <p class="legend">
+                    <span class="high"><i></i>最高温</span>
+                    <span class="low"><i></i>最低温</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div app-city city="location" visible="visible" hot-list="hotList" choose-city="chooseCity" search-info="searchInfo"></div>

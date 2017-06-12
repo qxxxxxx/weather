@@ -1,0 +1,107 @@
+.select-loc{
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .pt(10);
+    color:@fontDefaultColor;
+    background:rgba(0,0,0,.2);
+    overflow: scroll;
+    .search-box{
+        text-align: center;
+        justify-content:space-around;
+        border-bottom: 1px #ccc solid;
+        .pl(10);
+        .pr(10);
+        .pt(10);
+        .pb(10);
+        .h(20);
+        .lh(20);
+        span{
+            .fs(20);
+            .mr(10);
+        }
+        .submit-btn{
+            .fs(16);
+            .ml(10);
+        }
+        input{
+            flex:1;
+            border-radius: 5px;
+            text-align: left;
+            padding: 3px 5px;
+        }
+    }
+    h2{
+        .fs(20);
+        .pl(10);
+         .mb(10);
+         .mt(10);
+    }
+    h3{
+        .mb(10);
+        .mt(10);
+        .pl(20);
+    }
+    .cancel{
+        position: fixed;
+        display: block;
+        .fs(20);
+        .w(20);
+        .h(20);
+
+        border-radius: 50%;
+        border: 1px solid @fontDefaultColor;
+        right: 50%;
+        margin-right: -0.5em;
+        .bottom(10);
+    }
+    .city-list{
+        .pb(10);
+         li{
+            float: left;
+            width: 33.3%;
+            .fs(16);
+            .h(40);
+            .lh(40);
+            text-align: center;
+        }
+        span{
+            padding: 3px 10px;
+            border-radius: 5px;
+            border: 1px solid @fontDefaultColor
+        }
+    }
+    .result-list li{
+        
+        .pt(5);
+        .pb(5);
+        border-bottom: 1px solid #ccc;
+        .pl(20);
+    }
+}
+@keyframes fadeOut{
+    from{
+        bottom: 0;
+        height: 100%;
+    }
+    to{
+        bottom: 0;
+        height: 0;
+    }
+}
+.animate-show-hide.ng-hide {
+  opacity: 0;
+  height:0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.check-element {
+  opacity: 1;
+}

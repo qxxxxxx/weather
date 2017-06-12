@@ -1,0 +1,81 @@
+/**
+  loading及页面过渡效果
+**/
+.loading{
+  position: absolute;
+  top:50%;
+  width: 100%;
+  text-align: center;
+}
+// bounce 开始
+.bounce-box{
+  margin-top: -.5em;
+  .bounce{
+    display: inline-block;
+    .fs(10);
+    width: 1em;
+    height:1em;
+    background: dodgerblue;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .bounce1{
+    animation-delay: 0;
+  }
+  .bounce2{
+    animation-delay: .2s;
+  }
+  .bounce3{
+    animation-delay: .4s;
+  }
+}
+
+@keyframes bounce {
+  0%{-webkit-transform:scale(0)};
+  50%{-webkit-transform:scale(1.0)};
+  100%{-webkit-transform: scale(0)};
+}
+// bounce 结束
+
+//go-next
+.go-next{
+  animation: goNext .5s ease ;
+}
+@-webkit-keyframes goNext{
+    0%{-webkit-transform:translate3d(100%,0,0)};
+    100%{-webkit-transform: translate3d(0,0,0)}
+}
+//go-pre
+.go-pre{
+  animation: goPre .5s ease-in-out
+}
+@-webkit-keyframes goPre{
+    0%{-webkit-transform:translate3d(-100%,0,0)};
+    100%{-webkit-transform: translate3d(0,0,0)}
+}
+//fadeIn
+.fadeIn{
+  animation: fadeIn .5s ease-in
+}
+@-webkit-keyframes fadeIn{
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+//go-next-text
+.go-next-txet{
+  animation: goNextTxet .5s ease-in-out
+}
+@-webkit-keyframes goNextTxet{
+      0%{-webkit-transform:translate3d(2em,0,0);opacity: 0};
+    100%{-webkit-transform: translate3d(0,0,0);opacity: 1}
+}
+//go-pre-text
+.go-pre-txet{
+  animation: goPreTxet .5s ease-in-out
+}
+@-webkit-keyframes goPreTxet{
+      0%{-webkit-transform:translate3d(-2em,0,0);opacity: 0};
+    100%{-webkit-transform: translate3d(0,0,0);opacity: 1}
+}

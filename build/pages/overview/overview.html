@@ -1,0 +1,6 @@
+<div class="over-view ta-c">
+    <p class="weather-state" ng-bind="list.now.cond.txt?list.now.cond.txt:'获取中'"></p>
+    <p class="temperature"><span class=" p-r" ng-bind="list.now.tmp?list.now.tmp:'-'"></span></p>
+    <p class=" p-r"><span class=" p-r" ng-bind="update"></span></p>
+    <span class="pm" ng-bind="list.aqi.city.pm25+list.aqi.city.qlty"></span>
+</div>

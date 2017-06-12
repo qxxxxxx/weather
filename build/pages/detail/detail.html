@@ -1,0 +1,30 @@
+<div class="detail">
+    <div app-head-bar text="详细预报" page-an="pageAn" an-info="anInfo"></div>
+    <div class="go-{{anInfo.pageAn}}">
+        <div class="hourly-forecast">
+            <div class="hourly-forecast-cont">
+                <h3>短时预报</h3>
+                <ul class="clearfix">
+                    <li ng-repeat="item in list.hourly_forecast track by $index">
+                        <p ng-bind="item.date_s"></p>
+                        <p class="icon {{'icon-'+item.className}}"></p>
+                        <p ng-bind="item.cond.txt"></p>
+                        <p ng-bind="item.tmp"></p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="tips">
+
+            <div class="tips-container clearfix">
+                <div class="tips-item" ng-repeat="tip in list.suggestion" ng-click="getName(tip);pageAn(0);">
+                    <p class="tips-icon va-m"><img ng-src="{{tip.img}}" alt="" ng-show="tip.img"></p>
+                    <p class="tips-name" ng-bind="tip.name">空气指数</p>
+                    <p class="tips-cont" ng-bind="tip.brf"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

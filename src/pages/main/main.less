@@ -1,0 +1,47 @@
+.container{
+    min-height: 100vh;
+    color: @fontDefaultColor;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+
+    .chart{
+      margin: 0 auto;
+    }
+
+
+}
+.forest-tmp{
+    .mt(20);
+    }
+.forest-tmp h2{
+    .fs(16);
+    .mb(10);
+    .ml(10);
+}
+.forest-tmp .legend{
+    .mt(20);
+   font-size: 0;
+
+   span{
+       .fs(14);
+   }
+    i{
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+    }
+    .high i{
+        background: @maxTmpColor;
+    }
+    .low i{
+        margin-left: 5px;
+        background: @minTmpColor;
+    }
+
+}
+
+.blur{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    // transform: scale(.95,.95);
+}

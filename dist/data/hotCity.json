@@ -1,0 +1,8 @@
+[
+    { "id": "CN101010100", "cityEn": "beijing", "cityZh": "北京", "countryCode": "CN", "countryEn": "China", "countryZh": "中国", "provinceEn": "beijing", "provinceZh": "北京", "leaderEn": "beijing", "leaderZh": "北京", "lat": "39.904989", "lon": "116.405285" },
+    { "id": "CN101020100", "cityEn": "shanghai", "cityZh": "上海", "countryCode": "CN", "countryEn": "China", "countryZh": "中国", "provinceEn": "shanghai", "provinceZh": "上海", "leaderEn": "shanghai", "leaderZh": "上海", "lat": "31.231706", "lon": "121.472644" },
+    { "id": "CN101280101", "cityEn": "guangzhou", "cityZh": "广州", "countryCode": "CN", "countryEn": "China", "countryZh": "中国", "provinceEn": "guangdong", "provinceZh": "广东", "leaderEn": "guangzhou", "leaderZh": "广州", "lat": "23.125178", "lon": "113.280637" },
+    { "id": "CN101280601", "cityEn": "shenzhen", "cityZh": "深圳", "countryCode": "CN", "countryEn": "China", "countryZh": "中国", "provinceEn": "guangdong", "provinceZh": "广东", "leaderEn": "shenzhen", "leaderZh": "深圳", "lat": "22.547", "lon": "114.085947" },
+    { "id": "CN101250101", "cityEn": "changsha", "cityZh": "长沙", "countryCode": "CN", "countryEn": "China", "countryZh": "中国", "provinceEn": "hunan", "provinceZh": "湖南", "leaderEn": "changsha", "leaderZh": "长沙", "lat": "28.19409", "lon": "112.982279" },
+    { "id": "CN101030100", "cityEn": "tianjin", "cityZh": "天津", "countryCode": "CN", "countryEn": "China", "countryZh": "中国", "provinceEn": "tianjin", "provinceZh": "天津", "leaderEn": "tianjin", "leaderZh": "天津", "lat": "39.125596", "lon": "117.190182" }
+]

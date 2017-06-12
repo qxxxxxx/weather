@@ -1,0 +1,52 @@
+.over-view{
+    .pt(80);
+    .mb(20);
+    p{
+        .mt(10);
+        .mb(10);
+    }
+    .weather-state,.compare,.pm{
+        .fs(16);
+
+    }
+    .temperature{
+        display: inline-block;
+        .fs(58);
+
+    }
+    .compare>span::after{
+        display: inline-block;
+        .w(5);
+        .h(5);
+        position: absolute;
+        top:-1em;
+        right:-5px;
+        content: '。';
+
+
+    }
+    .temperature>span::after {
+            display: inline-block;
+            .w(5);
+            .h(5);
+            .fs(20);
+            position: absolute;
+            top:-.8em;
+            right:-8px;
+            content: '。';
+        }
+    .pm{
+
+        .h(20);
+        .lh(20);
+        padding: 3px 10px;
+        border: 2px solid @fontDefaultColor;
+        border-radius: 10px;
+        margin-left:auto;
+        margin-right: auto;
+        .mt(10);
+    }
+    .forest-tmp{
+        padding: 10px;
+    }
+}

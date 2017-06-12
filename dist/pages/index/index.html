@@ -1,0 +1,14 @@
+<div app-head-bar text="{{info.cont.name}}" page-an="pageAn" an-info="anInfo"></div>
+
+<div class="index-container go-{{anInfo.pageAn}}">
+    <div class="index-cont p-r">
+        <h2 class="tc-red" ng-bind="info.cont.brf"></h2>
+        <p class="" ng-bind="info.cont.txt"></p>
+        <h3 class="index-loction" ng-bind="info.city"></h3>
+        <p class="tc-gray" ng-bind="'天气状况:'+info.weather.text"></p>
+        <p class="tc-gray" ng-bind="'温度范围:'+info.weather.tmp"></p>
+        <p class="tc-gray" ng-bind="'风力风向:'+info.weather.wind.dir+info.weather.wind.sc+'级'"></p>
+        <img class="index-img p-a" ng-src="{{info.cont.img}}" alt="">
+    </div>
+
+</div>
